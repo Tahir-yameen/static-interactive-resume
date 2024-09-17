@@ -1,0 +1,139 @@
+/* Reset some default styles */
+body, h1, h2, h4, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+  }
+
+.vertical-text {
+    position: absolute;
+    left: 0;
+    color: white;
+    transform: translateY(-50%) rotate(-90deg);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5cap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    background-color: black;
+    color: rgb(32, 127, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background: rgb(154, 177, 226);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 5s ease-out;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+header h1 {
+    color: blue;
+    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;    
+    margin-bottom: 0px;
+    animation: slideIn 1s ease-out;
+}
+
+header p {
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+section {
+    border-bottom: 2px solid black;
+    padding-bottom: 3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section h2 {
+    color: black;
+    font-size: 1.8em;
+    margin-bottom: 1px;
+    animation: fadeInUp 1s ease-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h4 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 1px 0;
+    border-bottom: 1px solid black;
+    color: rgb(32, 127, 182);
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.tb {
+    color: grey;
+    font-size: 1em;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.vertical-text-1 {
+    position: absolute;
+    right: 0;
+    color: White;
+    transform: translateY(-50%) rotate(90deg);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2cap;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
