@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, h4, p, ul {
+body, h2, h3, h4, p, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,20 +9,20 @@ body, h1, h2, h4, p, ul {
     display: none;
   }
 
-.vertical-text {
+/* .vertical-text {
     position: absolute;
     left: 0;
     color: white;
     transform: translateY(-50%) rotate(-90deg);
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.5cap;
-}
+} */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.2;
+    line-height: 1.1;
     background-color: black;
-    color: rgb(32, 127, 182);
+    color: rgb(100, 71, 8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +34,10 @@ body {
     max-width: 800px;
     width: 100%;
     padding: 20px;
-    background: rgb(154, 177, 226);
+    background: rgb(230, 200, 120);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 5s ease-out;
+    animation: fadeIn 2s ease-out;
 }
 
 header {
@@ -45,16 +45,16 @@ header {
     margin-bottom: 2px;
 }
 
-header h1 {
-    color: blue;
-    font-size: 2.5em;
+header h2 {
+    color: brown;
+    font-size: 3.5em;
     font-family: 'Times New Roman', Times, serif;    
     margin-bottom: 0px;
     animation: slideIn 1s ease-out;
 }
 
 header p {
-    color: black;
+    color: rgb(78, 54, 3);
     font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;    
 }
@@ -67,12 +67,12 @@ main {
 
 section {
     border-bottom: 2px solid black;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-section h2 {
-    color: black;
+section h3 {
+    color: rgb(78, 54, 3);
     font-size: 1.8em;
     margin-bottom: 1px;
     animation: fadeInUp 1s ease-out;
@@ -80,7 +80,7 @@ section h2 {
 }
 
 h4 {
-    color: black;
+    color: rgb(78, 54, 3);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -92,19 +92,19 @@ ul {
 li {
     padding: 1px 0;
     border-bottom: 1px solid black;
-    color: rgb(32, 127, 182);
+    color: rgb(100, 71, 8);
     font-family: 'Times New Roman', Times, serif;    
 }
 
 .tb {
-    color: grey;
+    color: rgb(230, 200, 120);
     font-size: 1em;
-    background-color: black;
+    background-color: rgb(100, 71, 8);
     font-family: 'Times New Roman', Times, serif;    
 }
 
 a {
-    color: #3498db;
+    color: rgb(100, 71, 8);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -113,14 +113,14 @@ a:hover {
     color: #2980b9;
 }
 
-.vertical-text-1 {
+/* .vertical-text-1 {
     position: absolute;
     right: 0;
     color: White;
     transform: translateY(-50%) rotate(90deg);
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2cap;
-}
+} */
 
 /* Animations */
 @keyframes fadeIn {

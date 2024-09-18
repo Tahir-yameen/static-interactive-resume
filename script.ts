@@ -1,3 +1,4 @@
+
 function toggleSectionVisibility() {
     const section = document.getElementById('toggleSection');
     
@@ -58,6 +59,10 @@ const skills: SkillsItem[] = [
     {
         title: "TS",
         description: "TypeScript"
+    },
+    {
+        title: "NextJS",
+        description: "React Framework"
     }
 ];
 

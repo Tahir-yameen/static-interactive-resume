@@ -42,6 +42,10 @@ var skills = [
     {
         title: "TS",
         description: "TypeScript"
+    },
+    {
+        title: "NextJS",
+        description: "React Framework"
     }
 ];
 function populateExperience() {
