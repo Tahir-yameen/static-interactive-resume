@@ -1,4 +1,3 @@
-
 function toggleSectionVisibility() {
     const section = document.getElementById('toggleSection');
     
