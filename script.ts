@@ -28,15 +28,15 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
     {
-        title: "Front-end Developer",
+        title: "Fresher",
         company: "Tech Company",
-        date: "Jan 2022 - Present",
-        description: "Developing and maintaining the company's main website."
+        date: "Present",
+        description: "Developing and maintaining different websites."
     },
     {
-        title: "Intern",
+        title: "Learning Skills",
         company: "Web Solutions",
-        date: "Jun 2021 - Dec 2021",
+        date: "Present",
         description: "Assisted in developing small features and bug fixes."
     }
 ];
