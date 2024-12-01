@@ -29,15 +29,15 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
     {
         title: "Fresher",
-        company: "Tech Company",
-        date: "Present",
+        company: "",
+        date: "",
         description: "Developing and maintaining different websites."
     },
     {
         title: "Learning Skills",
-        company: "Web Solutions",
-        date: "Present",
-        description: "Assisted in developing small features and bug fixes."
+        company: "",
+        date: "",
+        description: "creating & exploring new features and bug fixes."
     }
 ];
 
@@ -62,6 +62,10 @@ const skills: SkillsItem[] = [
     {
         title: "NextJS",
         description: "React Framework"
+    },
+    {
+        title: "Sanity Studio",
+        description: "A real-time content creation and management application"
     }
 ];
 
@@ -72,7 +76,8 @@ function populateExperience(): void {
 
     experiences.forEach(exp => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<strong>${exp.title}</strong> at ${exp.company} (${exp.date})<br>${exp.description}`;
+        listItem.innerHTML = `<strong>${exp.title}</strong> ${exp.company} ${exp.date}<br>${exp.description}`;
+        // listItem.innerHTML = `<strong>${exp.title}</strong> at ${exp.company} (${exp.date})<br>${exp.description}`;
         experienceList.appendChild(listItem);
     });
 }

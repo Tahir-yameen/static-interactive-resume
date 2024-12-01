@@ -18,16 +18,16 @@ window.onload = function () {
 };
 var experiences = [
     {
-        title: "Front-end Developer",
-        company: "Tech Company",
-        date: "Jan 2022 - Present",
-        description: "Developing and maintaining the company's main website."
+        title: "Fresher",
+        company: "",
+        date: "",
+        description: "Developing and maintaining different websites."
     },
     {
-        title: "Intern",
-        company: "Web Solutions",
-        date: "Jun 2021 - Dec 2021",
-        description: "Assisted in developing small features and bug fixes."
+        title: "Learning Skills",
+        company: "",
+        date: "",
+        description: "creating & exploring new features and bug fixes."
     }
 ];
 var skills = [
@@ -46,6 +46,10 @@ var skills = [
     {
         title: "NextJS",
         description: "React Framework"
+    },
+    {
+        title: "Sanity Studio",
+        description: "A real-time content creation and management application"
     }
 ];
 function populateExperience() {
@@ -54,7 +58,8 @@ function populateExperience() {
         return;
     experiences.forEach(function (exp) {
         var listItem = document.createElement('li');
-        listItem.innerHTML = "<strong>".concat(exp.title, "</strong> at ").concat(exp.company, " (").concat(exp.date, ")<br>").concat(exp.description);
+        listItem.innerHTML = "<strong>".concat(exp.title, "</strong> ").concat(exp.company, " ").concat(exp.date, "<br>").concat(exp.description);
+        // listItem.innerHTML = `<strong>${exp.title}</strong> at ${exp.company} (${exp.date})<br>${exp.description}`;
         experienceList.appendChild(listItem);
     });
 }
