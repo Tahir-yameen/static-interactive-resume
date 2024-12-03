@@ -27,7 +27,7 @@ var experiences = [
         title: "Learning Skills",
         company: "",
         date: "",
-        description: "creating & exploring new features and bug fixes."
+        description: "Creating new features & exploring differnt bug fixes."
     }
 ];
 var skills = [
