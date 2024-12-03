@@ -59,6 +59,13 @@ header p {
     font-family: 'Times New Roman', Times, serif;    
 }
 
+.about-me-text
+{
+    color: rgb(78, 54, 3);
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
 main {
     display: flex;
     flex-direction: column;
